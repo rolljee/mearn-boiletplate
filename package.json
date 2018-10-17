@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rolljee/mearn-boiletplate.git"
+    "url": "git+https://github.com/rolljee/mearn-boilerplate.git"
   },
   "author": "Rolljee & Nerwin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rolljee/mearn-boiletplate/issues"
+    "url": "https://github.com/rolljee/mearn-boilerplate/issues"
   },
-  "homepage": "https://github.com/rolljee/mearn-boiletplate#readme",
+  "homepage": "https://github.com/rolljee/mearn-boilerplate#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "concurrently": "^4.0.1",
