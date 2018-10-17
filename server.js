@@ -7,7 +7,7 @@ const app = express();
 // Startup
 // require('./startup/config')();
 // require('./startup/db')();
-// require('./startup/routes')(app);
+require('./startup/routes')(app);
 
 // Middleware
 app.use(passport.initialize());
