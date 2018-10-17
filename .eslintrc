@@ -1,0 +1,93 @@
+{
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"allowImportExportEverywhere": true,
+		"ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+	},
+	"plugins": [
+		"react",
+		"security"
+	],
+	"extends": [
+		"plugin:security/recommended",
+		"eslint:recommended",
+		"airbnb",
+		"plugin:react/recommended"
+	],
+	"rules": {
+		"no-undef": "error",
+		"no-restricted-syntax": "off",
+		"class-methods-use-this": "off",
+		"arrow-parens": "off",
+		"function-paren-newline":"off",
+		"no-implicit-globals":"error",
+		"no-restricted-globals": "off",
+		"object-curly-newline": "off",
+		"no-control-regex": "off",
+		"prefer-destructuring": "off",
+		"consistent-return": "off",
+		"no-loop-func": "off",
+		"no-restricted-properties": "off",
+		"new-cap": "off",
+		"indent": [
+			"error",
+			"tab",
+			{
+				"ArrayExpression": 1,
+				"ObjectExpression": 1
+			}
+		],
+		"space-before-function-paren": ["error", {
+			"anonymous": "never",
+			"named": "never",
+			"asyncArrow": "always"
+		}],
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"semi": ["error", "always"],
+		"no-plusplus": "off",
+		"no-global-assign": "error",
+		"prefer-arrow-callback": "off",
+		"no-template-curly-in-string": "off",
+		"max-len": "off",
+		"comma-dangle": "error",
+		"no-else-return": "off",
+		"no-multi-str": "error",
+		"no-trailing-spaces": ["error", { "skipBlankLines": true }],
+		"no-multi-spaces": [
+			"error",
+			{
+				"exceptions": {
+					"BinaryExpression": true,
+					"VariableDeclarator": true,
+					"ImportDeclaration": true
+				}
+			}
+		],
+		"no-tabs": "off",
+		"eqeqeq": "error",
+		"no-console": "off",
+		"no-lonely-if": "error",
+		"no-extra-semi": "error",
+		"space-infix-ops": "error",
+		"no-underscore-dangle": "off",
+		"no-prototype-builtins": "off",
+		"radix": ["error", "as-needed"],
+		"react/jsx-indent": "error",
+		"react/jsx-uses-vars": "error",
+		"react/jsx-uses-react": "error",
+		"react/jsx-indent-props": "error",
+		"react/prefer-stateless-function": "error",
+		"security/detect-object-injection": "off",
+		"security/detect-non-literal-regexp": "off",
+		"security/detect-non-literal-fs-filename": "off"
+	},
+	"env": {
+		"es6": true,
+		"node": true,
+		"jest": true,
+		"browser": true
+	}
+}
