@@ -12,10 +12,10 @@
 		"security"
 	],
 	"extends": [
-		"plugin:security/recommended",
-		"eslint:recommended",
 		"airbnb",
-		"plugin:react/recommended"
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:security/recommended"
 	],
 	"rules": {
 		"no-undef": "error",
